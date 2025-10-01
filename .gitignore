@@ -1,0 +1,20 @@
+# Lazy.nvim
+lazy-lock.json
+
+# Mason
+.mason/
+
+# Treesitter
+parser/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Vim swap files
+*.swp
+*.swo
+*~
+
