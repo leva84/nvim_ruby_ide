@@ -109,6 +109,16 @@ require("lazy").setup({
   -- Темы
   { "xiantang/darcula-dark.nvim", dependencies = { "nvim-treesitter/nvim-treesitter" } },
   { "xiyaowong/transparent.nvim" },
+
+  -- Markdown preview
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = function()
+      vim.fn["mkdp#util#install"]()
+    end,
+    ft = { "markdown" },
+  }
 })
 
 -- ============================================================================
